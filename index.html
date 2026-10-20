@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Painel de Vagas – Petroquímica e O&G</title>
-<meta name="theme-color" content="#1f3864">
+<meta name="theme-color" content="#0e5263">
 <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><meta property="og:type" content="website"><meta property="og:title" content="Painel de Vagas – Petroquímica e O&G"><meta property="og:description" content="Vagas e canais de candidatura em petroquímica e petróleo & gás no Brasil, com link para a página oficial de cada empresa."><meta property="og:url" content="https://projetoindustrial.github.io/vagas/"><meta property="og:image" content="https://projetoindustrial.github.io/vagas/icon-512.png"><meta name="twitter:card" content="summary">
 <link rel="icon" href="icon-192.png">
 <style>
@@ -53,6 +53,70 @@ header h1{font-size:16px;white-space:nowrap}header small{font-size:12px;overflow
 <!-- Casca compartilhada do Projeto Industrial (menu único em /shell/nav.json) -->
 <link rel="stylesheet" href="/shell/pi-shell.css">
 <script src="/shell/pi-shell.js" defer data-pi-mode="fab" data-pi-pos="br" data-pi-offset="68" data-pi-active="vagas"></script>
+<style id="ds-bridge">
+/* Ponte do Design System v2 (tokens com contraste corrigido, out/2026). Remover este bloco desfaz. */
+:root {
+  --color-brand-deep: #08263d;
+  --color-brand-petroleum: #0e5263;
+  --color-brand-cyan: #00a6a6;
+  --color-brand-cyan-muted: #e6f7f7;
+  --color-surface-page: #f4f7fa;
+  --color-surface-card: #ffffff;
+  --color-surface-sidebar: #ffffff;
+  --color-surface-overlay: rgba(8, 38, 61, 0.45);
+  --color-text-primary: #172b3a;
+  --color-text-secondary: #526575;
+  --color-text-inverse: #ffffff;
+  --color-text-link: #0e5263;
+  --color-text-link-hover: #08263d;
+  --color-status-success: #136b49;
+  --color-status-success-bg: #e8f5f0;
+  --color-status-warning: #8a5a00;
+  --color-status-warning-bg: #fdf3e3;
+  --color-status-danger: #a82f2f;
+  --color-status-danger-bg: #fceaea;
+  --color-status-info: #0e5263;
+  --color-status-info-bg: #e8eef2;
+  --color-border-default: #d0d9e0;
+  --color-border-strong: #7d8f9e;
+  --color-border-focus: #00a6a6;
+  --color-focus-ring: 0 0 0 3px rgba(0, 166, 166, 0.35);
+  --bg:var(--color-surface-page);--card:var(--color-surface-card);--tx:var(--color-text-primary);--mut:var(--color-text-secondary);--bd:var(--color-border-default);--ac:var(--color-text-link);--ac2:var(--color-brand-petroleum);--ok:var(--color-status-success);--warn:var(--color-status-warning);--warnbg:var(--color-status-warning-bg);--chip:var(--color-brand-cyan-muted);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-brand-deep: #0b1520;
+    --color-brand-petroleum: #1a7a8c;
+    --color-brand-cyan: #00c4c4;
+    --color-brand-cyan-muted: #0d2a2e;
+    --color-surface-page: #0b1520;
+    --color-surface-card: #142333;
+    --color-surface-sidebar: #0f1c28;
+    --color-surface-overlay: rgba(0, 0, 0, 0.55);
+    --color-text-primary: #e8eef2;
+    --color-text-secondary: #8ba3b5;
+    --color-text-inverse: #ffffff;
+    --color-text-link: #5eb8c4;
+    --color-text-link-hover: #00c4c4;
+    --color-status-success: #2da56e;
+    --color-status-success-bg: #0f2a1c;
+    --color-status-warning: #d49a2a;
+    --color-status-warning-bg: #2a220e;
+    --color-status-danger: #e05555;
+    --color-status-danger-bg: #2a1212;
+    --color-status-info: #5eb8c4;
+    --color-status-info-bg: #0f1c28;
+    --color-border-default: #243447;
+    --color-border-strong: #5f7890;
+    --color-border-focus: #00c4c4;
+    --color-focus-ring: 0 0 0 3px rgba(0, 196, 196, 0.4);
+    --bg:var(--color-surface-page);--card:var(--color-surface-card);--tx:var(--color-text-primary);--mut:var(--color-text-secondary);--bd:var(--color-border-default);--ac:var(--color-text-link);--ac2:var(--color-brand-petroleum);--ok:var(--color-status-success);--warn:var(--color-status-warning);--warnbg:var(--color-status-warning-bg);--chip:var(--color-brand-cyan-muted);
+  }
+}
+/* DS: nunca texto branco sobre ciano/azul claro; cabeçalho e botão primário em petróleo com texto branco */
+header { background: var(--color-brand-petroleum); color: var(--color-text-inverse); }
+.btn.p { background: var(--color-brand-petroleum); border-color: var(--color-brand-petroleum); color: var(--color-text-inverse); }
+</style>
 </head>
 <body>
 <header><h1>Vagas O&amp;G Brasil</h1><small id="sub"></small><a href="https://projetoindustrial.github.io/" style="margin-left:auto;color:inherit;font-size:12px;white-space:nowrap;text-decoration:none">Projeto Industrial ↗</a></header>
