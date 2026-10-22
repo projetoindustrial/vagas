@@ -58,7 +58,7 @@ header h1{font-size:16px;white-space:nowrap}header small{font-size:12px;overflow
 :root {
   --color-brand-deep: #08263d;
   --color-brand-petroleum: #0e5263;
-  --color-brand-cyan: #00a6a6;
+  --color-brand-cyan: #009f9f;
   --color-brand-cyan-muted: #e6f7f7;
   --color-surface-page: #f4f7fa;
   --color-surface-card: #ffffff;
@@ -79,8 +79,8 @@ header h1{font-size:16px;white-space:nowrap}header small{font-size:12px;overflow
   --color-status-info-bg: #e8eef2;
   --color-border-default: #d0d9e0;
   --color-border-strong: #7d8f9e;
-  --color-border-focus: #00a6a6;
-  --color-focus-ring: 0 0 0 3px rgba(0, 166, 166, 0.35);
+  --color-border-focus: #0e5263;
+  --color-focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #0e5263;
   --bg:var(--color-surface-page);--card:var(--color-surface-card);--tx:var(--color-text-primary);--mut:var(--color-text-secondary);--bd:var(--color-border-default);--ac:var(--color-text-link);--ac2:var(--color-brand-petroleum);--ok:var(--color-status-success);--warn:var(--color-status-warning);--warnbg:var(--color-status-warning-bg);--chip:var(--color-brand-cyan-muted);
 }
 @media (prefers-color-scheme: dark) {
@@ -109,14 +109,42 @@ header h1{font-size:16px;white-space:nowrap}header small{font-size:12px;overflow
     --color-border-default: #243447;
     --color-border-strong: #5f7890;
     --color-border-focus: #00c4c4;
-    --color-focus-ring: 0 0 0 3px rgba(0, 196, 196, 0.4);
+    --color-focus-ring: 0 0 0 2px #0b1520, 0 0 0 4px #00c4c4;
     --bg:var(--color-surface-page);--card:var(--color-surface-card);--tx:var(--color-text-primary);--mut:var(--color-text-secondary);--bd:var(--color-border-default);--ac:var(--color-text-link);--ac2:var(--color-brand-petroleum);--ok:var(--color-status-success);--warn:var(--color-status-warning);--warnbg:var(--color-status-warning-bg);--chip:var(--color-brand-cyan-muted);
   }
 }
 /* DS: nunca texto branco sobre ciano/azul claro; cabeçalho e botão primário em petróleo com texto branco */
 header { background: var(--color-brand-petroleum); color: var(--color-text-inverse); }
 .btn.p { background: var(--color-brand-petroleum); border-color: var(--color-brand-petroleum); color: var(--color-text-inverse); }
+/* DS v2.1: foco visível e alvos de toque >= 44px */
+:focus-visible { outline: 2px solid var(--color-border-focus); outline-offset: 2px; }
+@media (pointer: coarse) { .btn, .lk { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; } .b2 { min-height: 44px; } }
 </style>
+<style id="ds-extra">
+/* DS v2.4: tokens extras e componentes StatusBadge/EmptyState (ver COMPONENTES.md). Remover este bloco desfaz. */
+:root{--space-1:0.25rem;--space-2:0.5rem;--space-3:0.75rem;--space-4:1rem;--space-6:1.5rem;--space-12:3rem;--radius-md:8px;--radius-lg:12px;--radius-full:9999px;--font-size-h3:1.0625rem;--font-size-body:0.9375rem;--font-size-label:0.75rem;--font-weight-semibold:600;--control-height-md:40px;--control-touch-min:44px;--shadow-focus:var(--color-focus-ring);--color-surface-hover:#e8eaeb;--color-status-caution:#b84f12;--color-status-caution-bg:#fbf4f1;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--color-surface-hover:#293746;--color-status-caution:#fa9364;--color-status-caution-bg:#31292b;}}
+:root[data-theme="dark"]{--color-surface-hover:#293746;--color-status-caution:#fa9364;--color-status-caution-bg:#31292b;}
+/* ---------- StatusBadge (sempre com texto; a cor nunca é o único sinal) ---------- */
+.ds-badge { display: inline-flex; align-items: center; gap: var(--space-1); padding: 2px var(--space-2); border-radius: var(--radius-full); font-size: var(--font-size-label); font-weight: var(--font-weight-semibold); line-height: 1.4; white-space: nowrap; background: var(--color-surface-hover); color: var(--color-text-secondary); }
+.ds-badge::before { content: ""; width: .5em; height: .5em; border-radius: 50%; background: currentColor; flex: none; }
+.ds-badge--success { background: var(--color-status-success-bg); color: var(--color-status-success); }
+.ds-badge--warning { background: var(--color-status-warning-bg); color: var(--color-status-warning); }
+.ds-badge--caution { background: var(--color-status-caution-bg); color: var(--color-status-caution); }
+.ds-badge--danger  { background: var(--color-status-danger-bg);  color: var(--color-status-danger); }
+.ds-badge--info    { background: var(--color-status-info-bg);    color: var(--color-status-info); }
+
+/* ---------- EmptyState (explica e oferece o próximo passo) ---------- */
+.ds-empty { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-2); padding: var(--space-12) var(--space-6); border: 1px dashed var(--color-border-strong); border-radius: var(--radius-lg); background: var(--color-surface-card); color: var(--color-text-secondary); }
+.ds-empty__title { margin: 0; font-size: var(--font-size-h3); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); }
+.ds-empty__text { margin: 0; max-width: 46ch; font-size: var(--font-size-body); }
+.ds-empty__action { margin-top: var(--space-3); display: inline-flex; align-items: center; justify-content: center; min-height: var(--control-height-md); padding: 0 var(--space-4); border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); background: var(--color-surface-card); color: var(--color-text-link); font: inherit; font-weight: var(--font-weight-semibold); cursor: pointer; }
+.ds-empty__action:hover { background: var(--color-surface-hover); }
+.ds-empty__action:focus-visible { outline: none; box-shadow: var(--shadow-focus); }
+@media (pointer: coarse) { .ds-empty__action { min-height: var(--control-touch-min); } }
+.ds-badge{margin:4px 4px 0 0}
+</style>
+
 </head>
 <body>
 <header><h1>Vagas O&amp;G Brasil</h1><small id="sub"></small><a href="https://projetoindustrial.github.io/" style="margin-left:auto;color:inherit;font-size:12px;white-space:nowrap;text-decoration:none">Projeto Industrial ↗</a></header>
@@ -213,15 +241,16 @@ function telaVagas(base,titulo){
   const r=vagasFiltradas(base),m=document.getElementById('m'),at=ativos();
   m.innerHTML=(titulo?'<h2>'+titulo+'</h2>':'')+'<div class="bar"><input id="q" type="search" aria-label="Buscar vaga" placeholder="Cargo, empresa ou local" value="'+esc(F.q)+'"><button class="btn'+(at.length?' p':'')+'" id="bf">Filtros'+(at.length?' ('+at.length+')':'')+'</button></div>'+(at.length?'<div class="cnt">'+esc(resumo())+'</div>':'')+
   '<div class="cnt">'+r.length.toLocaleString('pt-BR')+' vaga(s) · exibindo '+Math.min(F.n,r.length)+' <button class="btn" data-csv="1" style="float:right;padding:2px 9px;font-size:12px">CSV</button></div><div id="lst">'+r.slice(0,F.n).map(cardVaga).join('')+'</div>'+
-  (r.length>F.n?'<div class="row"><button class="btn p" id="mais">Mostrar mais</button></div>':'')+(r.length===0?'<div class="card sub">Nenhuma vaga com esses filtros.</div>':'')+'<div style="margin-top:12px">'+AV+'</div>';
+  (r.length>F.n?'<div class="row"><button class="btn p" id="mais">Mostrar mais</button></div>':'')+(r.length===0?'<div class="ds-empty"><h3 class="ds-empty__title">Nenhuma vaga encontrada</h3><p class="ds-empty__text">Nenhuma vaga bate com a busca e os filtros atuais. Remova um filtro ou busque por outro termo.</p><button type="button" class="ds-empty__action" id="ve">Limpar filtros</button></div>':'')+'<div style="margin-top:12px">'+AV+'</div>';
   document.getElementById('bf').onclick=abrirFiltros;
   const q=document.getElementById('q');let t;q.oninput=ev=>{clearTimeout(t);t=setTimeout(()=>{F.q=q.value;F.n=40;const p=q.selectionStart;render();const q2=document.getElementById('q');q2.focus();q2.setSelectionRange(p,p)},250)};
-  const mb=document.getElementById('mais');if(mb)mb.onclick=()=>{F.n+=40;render()}}
+  const mb=document.getElementById('mais');if(mb)mb.onclick=()=>{F.n+=40;render()};
+  const ve=document.getElementById('ve');if(ve)ve.onclick=()=>{NSEL.forEach(k=>F[k]=FDEF[k]||'');F.q='';F.n=40;render()}}
 function cardEmpresa(e){
   const nv=NVB[e.id]||0,cs=D.can[e.id]||[],ok=cs.some(c=>c[3]&&/^Validado/.test(c[5]));
   const ul=[...new Set((D.uni[e.id]||[]).map(u=>u[0]&&u[1]?u[0]+'/'+u[1]:u[0]).filter(Boolean))].slice(0,3).join(', ');
   return '<div class="card" data-e="'+e.id+'" style="cursor:pointer"><h3 role="heading" aria-level="2">'+esc(e.n)+'</h3><div class="sub">'+esc(e.cat||'')+(ul?' · '+esc(ul):'')+'</div>'+
-  (nv?'<span class="chip ok">'+nv+' vagas no Brasil lidas</span>':'')+(ok?'<span class="chip ok">Canal validado</span>':'<span class="chip w">Canal não validado</span>')+'</div>'}
+  (nv?'<span class="ds-badge ds-badge--success">'+nv+' vagas no Brasil lidas</span>':'')+(ok?'<span class="ds-badge ds-badge--success">Canal validado</span>':'<span class="ds-badge ds-badge--warning">Canal não validado</span>')+'</div>'}
 function telaEmpresas(){
   const q=norm(EF.q),m=document.getElementById('m');
   const cats=[...new Set(D.emp.map(e=>e.cat).filter(Boolean))].sort();
@@ -239,7 +268,7 @@ function detalhe(id){
   const ul=us.map(u=>'<li>'+esc([u[0],u[1]].filter(Boolean).join('/'))+(u[3]?' – '+esc(u[3]):'')+(u[2]&&u[2]!=='Sem polo definido'?' <span class="sub">('+esc(u[2])+')</span>':'')+'</li>').join('')||'<li class="sub">Sem unidade com cidade cadastrada.</li>';
   bm.innerHTML='<div class="in"><div class="row"><button class="btn" id="fx">← Voltar</button></div><h2 style="font-size:20px">'+esc(e.n)+'</h2><div class="sub">'+esc([e.cat,e.setor,e.pais].filter(Boolean).join(' · '))+'</div>'+
   (e.grupo?'<div class="sub">Grupo: '+esc(e.grupo)+'</div>':'')+(e.pn?'<div class="sub">Prêmios Petrobras de Fornecedores na lista: '+e.pn+(e.ua?' (último em '+e.ua+')':'')+'</div>':'')+
-  '<div class="row">'+(NVB[id]?'<button class="btn p" id="vv">Ver '+NVB[id]+' vagas no Brasil</button>':'<span class="chip w">Nenhuma vaga lida no Brasil</span>')+'</div>'+
+  '<div class="row">'+(NVB[id]?'<button class="btn p" id="vv">Ver '+NVB[id]+' vagas no Brasil</button>':'<span class="ds-badge ds-badge--warning">Nenhuma vaga lida no Brasil</span>')+'</div>'+
   '<h2>Como se candidatar</h2>'+cl+'<h2>Unidades</h2><ul>'+ul+'</ul>'+
   (e.cargos2||e.cargos?'<h2>Cargos / termos de busca</h2><div class="desc">'+esc((e.cargos2||e.cargos).slice(0,900))+'</div>':'')+'</div>';
   document.body.appendChild(bm);bm.querySelector('#fx').onclick=()=>bm.remove();
