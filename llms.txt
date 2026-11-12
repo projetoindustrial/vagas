@@ -1,0 +1,18 @@
+# Painel de Vagas — Petroquímica e O&G Brasil
+
+> Vagas abertas e canais de candidatura de 271 empresas de petroquímica, química, petróleo e gás. 4700 vagas lidas em 13 e 14/10/2026 (1209 no Brasil). Cada vaga aponta para a página oficial da empresa; o site não recebe candidaturas. Dados podem estar desatualizados: confirme na fonte.
+
+## Dados (preferir estes a navegar pelo painel)
+- [vagas.csv](https://projetoindustrial.github.io/vagas/dados/vagas.csv): todas as vagas em CSV
+- [vagas.jsonl](https://projetoindustrial.github.io/vagas/dados/vagas.jsonl): todas as vagas em JSON Lines, com requisitos estimados e texto da vaga
+- [empresas.json](https://projetoindustrial.github.io/vagas/dados/empresas.json): empresas, unidades e canais de candidatura
+- [llms-full.txt](https://projetoindustrial.github.io/vagas/llms-full.txt): vagas do Brasil em texto corrido, por estado
+
+## Páginas
+- [Empresas por categoria](https://projetoindustrial.github.io/vagas/empresas/): uma página por empresa, com vagas, unidades e canais
+- [Vagas no Brasil por estado](https://projetoindustrial.github.io/vagas/brasil/): maiores: SP 362, RJ 311, BA 117, MG 74, PR 58, — 38, RS 37, SE 34
+- [Painel interativo](https://projetoindustrial.github.io/vagas/): versão com filtros, exige JavaScript
+
+## Observações
+- Nível e área das vagas são estimativas por palavras do título.
+- Projeto independente, sem vínculo com as empresas citadas. Índice geral: https://projetoindustrial.github.io/llms.txt
