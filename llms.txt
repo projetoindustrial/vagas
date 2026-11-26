@@ -1,6 +1,6 @@
 # Painel de Vagas — Petroquímica e O&G Brasil
 
-> Vagas abertas e canais de candidatura de 271 empresas de petroquímica, química, petróleo e gás. 4700 vagas lidas em 13 e 14/10/2026 (1209 no Brasil). Cada vaga aponta para a página oficial da empresa; o site não recebe candidaturas. Dados podem estar desatualizados: confirme na fonte.
+> Vagas e canais de candidatura de empresas de petroquímica, química, petróleo e gás. 271 empresas monitoradas, das quais 63 tinham vaga lida em 13 e 14/10/2026: 4700 vagas, sendo 1209 no Brasil, 3474 no exterior e 17 sem local informado. Cada vaga aponta para a página oficial da empresa; o site não recebe candidaturas. Dados podem estar desatualizados: confirme na fonte.
 
 ## Dados (preferir estes a navegar pelo painel)
 - [vagas.csv](https://projetoindustrial.github.io/vagas/dados/vagas.csv): todas as vagas em CSV
