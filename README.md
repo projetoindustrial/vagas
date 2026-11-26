@@ -9,3 +9,7 @@ Painel (PWA) com vagas abertas e canais de candidatura de empresas de petroquím
 - O filtro "Meu perfil" e as vagas salvas ficam só no seu aparelho (armazenamento local do navegador); nada é enviado a servidor.
 - Os dados vêm das páginas públicas de carreiras das empresas e podem estar desatualizados ou conter erros. Confirme sempre na página oficial da vaga.
 - Projeto independente, sem vínculo com as empresas citadas.
+
+## Licença
+
+O código deste repositório está sob a licença [MIT](LICENSE). Dados, nomes, textos e marcas de terceiros citados ou reunidos aqui continuam sob as licenças e os direitos de cada fonte e não são cobertos por esta licença.
