@@ -1,0 +1,46 @@
+perfil,vagas_validas,empresas,fontes,forca,ultimos_90d,de_91_a_180d,offshore,maior_empresa_pct,data_presumida,escopo
+Supervisor / Coordenador de operações e manutenção,225,53,4,forte,196,29,71,7,25,genérico (balde)
+Administrativo / Financeiro / RH / Jurídico,137,36,4,forte,123,14,29,9,16,corporativo
+Analista / Especialista corporativo (outros),130,42,4,forte,109,21,6,7,17,corporativo
+Mecânico / Técnico mecânico de manutenção,126,36,4,forte,109,17,33,15,13,industrial específico
+Aprendiz / Estágio,106,34,2,forte,80,26,21,13,14,corporativo
+"Engenheiro (elétrico, mecânico, produção, outros)",96,23,3,forte,87,9,35,12,4,genérico (balde)
+Comercial / Vendas,89,17,2,forte,69,20,15,49,3,corporativo
+Marítimo / Offshore (outros),78,20,4,forte,78,0,76,6,8,genérico (balde)
+Técnico de segurança do trabalho,74,23,4,forte,73,1,30,5,11,industrial específico
+Montador / Andaimeiro / Acesso por corda,53,12,4,forte,52,1,33,9,2,industrial específico
+Soldador,51,15,4,forte,51,0,25,14,4,industrial específico
+Operador de produção / processo,48,21,4,forte,42,6,5,8,7,industrial específico
+Eletricista,47,20,4,forte,42,5,9,19,11,industrial específico
+Marinheiro / Oficial de náutica / Comandante,46,16,4,forte,44,2,29,7,4,industrial específico
+Operador de guindaste / Munck / Ajudante de carga,46,14,4,forte,43,3,16,22,3,industrial específico
+Analista/Especialista SMS-HSE,45,14,3,forte,43,2,24,20,3,industrial específico
+Caldeireiro / Serralheiro,44,14,3,forte,44,0,24,11,3,industrial específico
+Comprador / Suprimentos,44,14,2,forte,40,4,19,34,6,industrial específico
+Logística (outros),43,13,3,forte,34,9,13,23,1,genérico (balde)
+Instrumentista / Técnico de automação,40,16,4,forte,39,1,20,15,3,industrial específico
+Planejador / PCM de manutenção,36,12,4,forte,34,2,11,19,1,industrial específico
+Técnico (outros),31,14,4,forte,27,4,1,16,4,genérico (balde)
+Motorista,30,9,3,forte,26,4,5,40,4,industrial específico
+Almoxarife / Auxiliar de estoque,28,16,4,forte,24,4,8,7,4,industrial específico
+Hotelaria e saúde embarcada,27,10,3,forte,26,1,17,7,2,industrial específico
+TI / Dados,27,12,3,forte,22,5,5,11,3,corporativo
+Mergulhador,27,2,2,fraco,27,0,26,93,0,industrial específico
+Pintor industrial / Jateador,25,10,4,forte,24,1,8,8,1,industrial específico
+"Inspetor (qualidade, soldagem, equipamentos)",24,5,3,médio,23,1,11,29,0,industrial específico
+Operador (outros),23,14,2,médio,22,1,0,17,5,genérico (balde)
+Servente / Mestre de obras / Topógrafo,21,4,3,fraco,10,11,0,81,0,industrial específico
+Projetista / Desenhista,21,4,2,médio,20,1,3,43,1,industrial específico
+Auxiliar / Ajudante geral,21,11,2,médio,20,1,0,24,2,genérico (balde)
+Brigada / Resposta a emergência,20,2,1,fraco,20,0,19,60,12,industrial específico
+Analista de qualidade,18,9,2,médio,16,2,2,11,2,industrial específico
+Analista de laboratório / Químico,15,7,3,médio,15,0,1,47,2,industrial específico
+Encanador / Tubulação,14,3,3,fraco,14,0,3,71,10,industrial específico
+Engenheiro de projetos / obras,11,4,2,médio,9,2,1,45,0,industrial específico
+Pedreiro / Armador / Carpinteiro,10,4,3,médio,6,4,3,30,0,industrial específico
+Engenheiro de segurança do trabalho,8,5,3,fraco,7,1,1,25,0,industrial específico
+Engenheiro de processos,8,2,2,fraco,8,0,2,50,0,industrial específico
+Operador de ROV / Rádio operador,7,5,3,fraco,7,0,6,14,2,industrial específico
+Usinagem / CNC,6,2,3,fraco,6,0,1,17,0,industrial específico
+Maquinista / Oficial de máquinas,4,1,2,fraco,4,0,3,25,1,industrial específico
+Engenheiro de manutenção / confiabilidade,4,3,3,fraco,3,1,1,25,0,industrial específico
