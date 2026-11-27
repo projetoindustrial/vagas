@@ -10,7 +10,7 @@
 
 ## Páginas
 - [Empresas por categoria](https://projetoindustrial.github.io/vagas/empresas/): uma página por empresa, com vagas, unidades e canais
-- [Vagas no Brasil por estado](https://projetoindustrial.github.io/vagas/brasil/): maiores: SP 362, RJ 311, BA 117, MG 74, PR 58, — 38, RS 37, SE 34
+- [Vagas no Brasil por estado](https://projetoindustrial.github.io/vagas/brasil/): maiores: SP 362, RJ 311, BA 117, MG 74, PR 58, UF não identificada 38, RS 37, SE 34
 - [Painel interativo](https://projetoindustrial.github.io/vagas/): versão com filtros, exige JavaScript
 
 ## Observações
