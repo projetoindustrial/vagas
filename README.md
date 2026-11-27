@@ -4,6 +4,7 @@ Painel (PWA) com vagas abertas e canais de candidatura de empresas de petroquím
 
 **Abrir:** https://projetoindustrial.github.io/vagas/
 
+- **Perfis de mercado:** ranking e fichas do que as vagas pedem (certificações, formação, regiões): https://projetoindustrial.github.io/vagas/perfis/
 - Cada vaga leva à página da própria empresa ou do portal de carreiras dela; este site não recebe candidaturas.
 - Funciona no celular e pode ser instalado como aplicativo (PWA).
 - O filtro "Meu perfil" e as vagas salvas ficam só no seu aparelho (armazenamento local do navegador); nada é enviado a servidor.
